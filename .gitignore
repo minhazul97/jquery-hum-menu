@@ -1,0 +1,9 @@
+<div class="header__nav-wrap">
+                    <nav class="header__nav-items">
+                        <a class="header__nav-item" href="#">Home</a>
+                        <a class="header__nav-item" href="#">About</a>
+                        <a class="header__nav-item" href="#">Blog</a>
+                        <a class="header__nav-item" href="#">Project</a>
+                        <a class="header__nav-item" href="#">Contact</a>
+                    </nav>
+                </div>

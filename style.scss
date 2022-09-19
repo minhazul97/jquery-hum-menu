@@ -1,0 +1,141 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: arial;
+}
+
+body{
+    overflow-x: hidden;
+    position: relative;
+}
+
+.container{
+    max-width: 1440px;
+    width: 100%;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.header{
+    background: #EF7700;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 2;
+
+    &__content{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__logo-wrap{
+        width: 224px;
+        height: 85px;
+    }
+
+    &__logo{
+        width: 100%;
+        height: 100%;
+    }
+
+    &__nav-items{
+        display: flex;
+        gap: 30px;
+    }
+
+    &__nav-item{
+        color: #ffffff;
+        font-size: 18px;
+        font-weight: bold;
+        text-decoration: none;
+    }
+
+    &__button{
+        width: 50px;
+        &:hover{
+            cursor: pointer;
+        }
+
+        &--active{
+            height: 50px;
+            display: grid;
+            place-items: center;
+            margin-right: 10px;
+        }
+    }
+
+    &__button-line{
+        width: 30px;
+        height: 2px;
+        background: #ffffff;
+        margin: 4px 0;
+        transition: .2s;
+    }
+
+    &__button-line-top{
+        &--active{
+            transform: rotateZ(45deg);
+            position: absolute;
+        }
+    }
+    &__button-line-center{
+        &--active{
+            display: none;
+        }
+    }
+    &__button-line-bottom{
+        &--active{
+            transform: rotateZ(-45deg);
+            position: absolute;
+        }
+    }
+
+    &__button-cross-wrap{
+        width: 50px;
+        height: 50px;
+        position: absolute;
+        right: 30px;
+        top: 30px;
+        display: grid;
+        place-items: center;
+
+        &:hover{
+            cursor: pointer;
+        }
+    }
+
+    &__button-cross{
+        width: 30px;
+        height: 2px;
+        background: #ffffff;
+        margin: 4px 0;
+        position: absolute;
+
+        &--one{
+            transform: rotateZ(45deg);
+        }
+        &--two{
+            transform: rotateZ(-45deg);
+        }
+    }
+
+    &__menu{
+        min-height: 100vh;
+        width: 100%;
+        position: absolute;
+        inset: 0;
+        background: #EF7700;
+        display: none;
+        place-items: center;
+        z-index: -1;
+
+        &--active{
+            display: grid;
+        }
+    }
+}

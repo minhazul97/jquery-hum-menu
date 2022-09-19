@@ -1,0 +1,120 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: arial;
+}
+
+body {
+  overflow-x: hidden;
+  position: relative;
+}
+
+.container {
+  max-width: 1440px;
+  width: 100%;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.header {
+  background: #EF7700;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 2;
+}
+.header__content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header__logo-wrap {
+  width: 224px;
+  height: 85px;
+}
+.header__logo {
+  width: 100%;
+  height: 100%;
+}
+.header__nav-items {
+  display: flex;
+  gap: 30px;
+}
+.header__nav-item {
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: bold;
+  text-decoration: none;
+}
+.header__button {
+  width: 50px;
+}
+.header__button:hover {
+  cursor: pointer;
+}
+.header__button--active {
+  height: 50px;
+  display: grid;
+  place-items: center;
+  margin-right: 10px;
+}
+.header__button-line {
+  width: 30px;
+  height: 2px;
+  background: #ffffff;
+  margin: 4px 0;
+  transition: 0.2s;
+}
+.header__button-line-top--active {
+  transform: rotateZ(45deg);
+  position: absolute;
+}
+.header__button-line-center--active {
+  display: none;
+}
+.header__button-line-bottom--active {
+  transform: rotateZ(-45deg);
+  position: absolute;
+}
+.header__button-cross-wrap {
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  right: 30px;
+  top: 30px;
+  display: grid;
+  place-items: center;
+}
+.header__button-cross-wrap:hover {
+  cursor: pointer;
+}
+.header__button-cross {
+  width: 30px;
+  height: 2px;
+  background: #ffffff;
+  margin: 4px 0;
+  position: absolute;
+}
+.header__button-cross--one {
+  transform: rotateZ(45deg);
+}
+.header__button-cross--two {
+  transform: rotateZ(-45deg);
+}
+.header__menu {
+  min-height: 100vh;
+  width: 100%;
+  position: absolute;
+  inset: 0;
+  background: #EF7700;
+  display: none;
+  place-items: center;
+  z-index: -1;
+}
+.header__menu--active {
+  display: grid;
+}/*# sourceMappingURL=style.css.map */
